@@ -1,0 +1,379 @@
+@media (max-width: 1024px) {
+
+    /* NAVBAR */
+    .nav-container {
+        padding: 15px 25px;
+    }
+
+    /* HERO */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text::before {
+        margin: 0 auto 25px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 380px;
+    }
+
+    /* ABOUT */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 380px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h2::after {
+        margin: 10px auto 0;
+    }
+
+    /* STATS */
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PORTFOLIO */
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* TECH STACK */
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CONTACT */
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* MOBILE - 768px and below */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .nav-container {
+        padding: 15px 25px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 55px;
+        left: 0%;
+        flex-direction: column;
+        background: rgb(15, 15, 15);
+        backdrop-filter: blur(0px);
+        width: 100%;
+        padding: 20px;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.35s ease;
+        pointer-events: none;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 12px;
+        border-radius: 8px;
+        transition: 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-menu.active {
+        top: 57px;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a:active {
+        background: rgba(225, 6, 0, 0.15);
+        color: #fff;
+        transform: translateX(8px);
+    }
+
+    .nav-menu a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 0%;
+        background: #e10600;
+        transition: 0.3s;
+    }
+
+    .nav-menu a:hover::before,
+    .nav-menu a:active::before {
+        height: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 120px 25px 0px;
+        min-height: 80vh;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-top: -20%;
+    }
+
+    .hero-text::before {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        margin-bottom: -10%;
+    }
+
+    .image-bg {
+        background: black;
+    }
+
+    .hero-image img {
+        width: 350px;
+        animation: none;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 0px 0px;
+        margin-top: 20%;
+    }
+
+    .about-container {
+        max-width: 90%;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-content {
+        padding-top: 0px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 12px;
+    }
+
+    .about-cards {
+        flex-direction: column;
+    }
+
+    /* STATS */
+    .stats {
+        padding: 0px 0px;
+    }
+
+    .stats-container {
+        gap: 18px;
+        max-width: 90%;
+        margin-top: 15%;
+    }
+
+    .stat-card {
+        padding: 30px 20px;
+    }
+
+    .stat-card h2 {
+        font-size: 38px;
+    }
+
+    /* PORTFOLIO */
+    .portfolio {
+        padding: 0px 0px;
+        margin-top: 30%;
+    }
+
+    .portfolio-container {
+        max-width: 90%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .section-title h2::after {
+        width: 30%;
+    }
+
+    .section-title p {
+        font-size: 12px;
+    }
+
+    .portfolio-tabs {
+        margin-top: -5%;
+        margin-bottom: 30px;
+    }
+
+    .directions {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .directions p {
+        font-size: 10px;
+    }
+
+    .portfolio-grid {
+        margin-top: 0px;
+        gap: 10px;
+    }
+
+    .portfolio-image img {
+        border-radius: 0px;
+    }
+
+    /* TECH STACK */
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tech-card {
+        height: 150px;
+    }
+
+    .tech-card i {
+        font-size: 48px;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 0px 0px;
+        margin-top: 20%;
+    }
+
+    .contact-container {
+        max-width: 90%;
+    }
+
+    .contact-info {
+        padding: 30px;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .contact-wrapper {
+        margin-top: 40%;
+        gap: 20px;
+    }
+
+    .contact-card h3 {
+        text-align: center;
+    }
+
+    .contact-card h3::after {
+        content: "";
+        width: 20%;
+        height: 3px;
+        margin: auto;
+        background: #e10600;
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 50px 25px 25px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo h2::after {
+        width: 30%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .back-to-top {
+        margin-top: 10px;
+    }
+}
+
+/* SMALL MOBILE - 480px and below */
+@media (max-width: 480px) {
+
+    /* HERO */
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        margin-top: -30%;
+    }
+
+    /* BUTTONS */
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* STATS */
+    .stat-card h2 {
+        font-size: 34px;
+    }
+
+    /* CONTACT */
+    .contact-item i {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
