@@ -1,0 +1,310 @@
+@media (max-width: 1200px) {
+
+    .hero-container,
+    .about-container,
+    .portfolio-container,
+    .contact-container,
+    .footer-container {
+        max-width: 90%;
+    }
+
+    .hero-container {
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.6rem;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        padding: 0px 0 40px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text,
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-text::before {
+        margin: 0 auto 25px;
+    }
+
+    .about-container,
+    .contact-wrapper,
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .hero-text p,
+    .about-content p,
+    .section-title p {
+        text-align: justify;
+    }
+
+    .about-image {
+        margin-top: 0;
+    }
+
+    .about-container {
+        align-items: center;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2,
+    .section-title {
+        text-align: center;
+    }
+
+    .about-content h2 {
+        text-align: left;
+    }
+
+    .about-content h2::after,
+    .section-title p::after {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-card,
+    .contact-info {
+        width: 100%;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-image img,
+    .about-image img {
+        width: min(100%, 420px);
+    }
+
+    .about-cards {
+        gap: 15px;
+    }
+
+    .about-card {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 0;
+    }
+
+    .portfolio-grid,
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-info,
+    .contact-card {
+        padding: 24px 20px;
+    }
+
+    .availability-item {
+        align-items: flex-start;
+    }
+
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container,
+    .about-container,
+    .portfolio-container,
+    .contact-container,
+    .footer-container {
+        max-width: 92%;
+    }
+
+    .hero-text h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .about-card {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 0;
+    }
+
+    .directions {
+        margin: 0 0 18px;
+    }
+
+    .portfolio-tech {
+        margin-top: 30px;
+    }
+
+    .tech-card {
+        height: 150px;
+    }
+
+    .tech-card i {
+        font-size: 42px;
+    }
+
+    .availability-item {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .availability-item i {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .hero-text p,
+    .about-content p,
+    .section-title p,
+    .contact-info p,
+    .availability-item p,
+    .footer-logo p {
+        font-size: 0.9rem;
+    }
+
+    .about {
+        margin-top: 20%;
+    }
+
+    .about-content h2 {
+        text-align: left;
+    }
+
+    .about-card h3 {
+        text-align: left;
+    }
+
+    .about-card p {
+        text-align: left;
+    }
+
+    .about-content .btn-primary {
+        margin-bottom: 20%;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-item {
+        gap: 10px;
+    }
+
+    .contact-item i {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .footer-social {
+        gap: 12px;
+    }
+
+    .footer-social a {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .footer-bottom .back-to-top {
+        margin-top: 12px;
+    }
+}
