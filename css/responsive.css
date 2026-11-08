@@ -140,13 +140,17 @@
         min-width: 0;
     }
 
-    .portfolio-grid,
     .tech-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .section-title {
         margin-bottom: 30px;
+        text-align: left;
     }
 
     .section-title h2 {
@@ -214,7 +218,7 @@
     }
 
     .portfolio-tech {
-        margin-top: 30px;
+        margin-top: 30%;
     }
 
     .tech-card {
@@ -264,6 +268,10 @@
         margin-top: 20%;
     }
 
+    .about-headline {
+        margin-top: 50px;
+    }
+
     .about-content h2 {
         text-align: left;
     }
@@ -288,6 +296,7 @@
         width: 36px;
         height: 36px;
         font-size: 14px;
+        margin-top: -6px;
     }
 
     .footer-social {

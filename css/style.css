@@ -173,18 +173,9 @@ body {
 
 .about-content h2 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: white;
     position: relative;
-}
-
-.about-content h2::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #e10600;
-    display: block;
-    margin-top: 10px;
 }
 
 .about-content p {
@@ -195,10 +186,39 @@ body {
     text-align: justify;
 }
 
+.about-headline {
+    margin-bottom: 20px;
+    margin-top: 10%;
+}
+
+.section-kicker {
+    display: block;
+    color: #e10600;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.about-headline h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 0 8px;
+}
+
+.about-headline p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
+
 .about-cards {
     display: flex;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 0;
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
@@ -272,15 +292,6 @@ body {
     font-size: 0.9rem;
 }
 
-.section-title p::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #e10600;
-    display: block;
-    margin-top: 10px;
-}
-
 .directions {
     display: flex;
     flex-wrap: wrap;
@@ -317,7 +328,7 @@ body {
 }
 
 .portfolio-grid {
-    margin-top: 2%;
+    margin-top: -2%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
@@ -351,20 +362,21 @@ body {
 
 /* TECH STACK */
 .portfolio-tech {
-    margin-top: 50px;
+    margin-top: 10%;
 }
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-top: -30px;
 }
 
 .tech-card {
     background: linear-gradient(145deg, #141414, #0d0d0d);
     border: 1px solid rgba(255, 0, 0, 0.08);
-    border-radius: 28px;
-    height: 170px;
+    border-radius: 10px;
+    height: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,7 +403,7 @@ body {
 }
 
 .tech-card i {
-    font-size: 58px;
+    font-size: 40px;
     margin-bottom: 18px;
     color: white;
     transition: 0.3s ease;
@@ -401,7 +413,7 @@ body {
 
 .tech-card h3 {
     color: #ddd;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 500;
     position: relative;
     z-index: 2;
@@ -499,7 +511,6 @@ body {
     flex: 1;
     position: relative;
     overflow: hidden;
-    border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -508,18 +519,17 @@ body {
 
 .contact-card h3 {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: relative;
     z-index: 2;
 }
 
-.contact-card h3::after {
-    content: "";
-    width: 10%;
-    height: 3px;
-    background: #e10600;
-    display: block;
-    margin-top: 10px;
+.contact-card > p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0 0 24px;
+    position: relative;
+    z-index: 2;
 }
 
 .availability-list {
