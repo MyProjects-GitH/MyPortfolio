@@ -142,7 +142,7 @@
 
     .portfolio-grid,
     .tech-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .section-title {
@@ -278,10 +278,6 @@
 
     .about-content .btn-primary {
         margin-bottom: 20%;
-    }
-
-    .tech-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact-item {
