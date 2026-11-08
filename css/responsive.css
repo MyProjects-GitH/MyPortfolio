@@ -197,11 +197,18 @@
     }
 
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 12px;
     }
 
-    .btn-primary,
+    .btn-primary {
+        width: calc(50% - 6px);
+        min-width: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
     .contact-btn {
         width: 100%;
         text-align: center;
@@ -251,17 +258,19 @@
     }
 
     .hero-text h2 {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 0.8rem;
     }
 
     .hero-text p,
     .about-content p,
     .section-title p,
+    .contact-card p,
     .contact-info p,
     .availability-item p,
     .footer-logo p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        font-weight: 200;
     }
 
     .about {
@@ -285,6 +294,8 @@
     }
 
     .about-content .btn-primary {
+        width: 100%;
+        display: inline-block;
         margin-bottom: 20%;
     }
 
@@ -296,7 +307,7 @@
         width: 36px;
         height: 36px;
         font-size: 14px;
-        margin-top: -6px;
+        margin-top: -10px;
     }
 
     .footer-social {

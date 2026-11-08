@@ -27,4 +27,3 @@ if (loader) {
         loader.classList.add('hide');
     });
 }
-

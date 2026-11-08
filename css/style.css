@@ -310,6 +310,7 @@ body {
 }
 
 @keyframes blinkText {
+
     0%,
     100% {
         opacity: 1;
@@ -524,7 +525,7 @@ body {
     z-index: 2;
 }
 
-.contact-card > p {
+.contact-card>p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     margin: 0 0 24px;
